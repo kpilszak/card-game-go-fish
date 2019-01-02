@@ -38,5 +38,25 @@ namespace card_game_go_fish
                 }
             }
         }
+
+        public Values GetRandomValue()
+        {
+
+        }
+
+        public Deck DoYouHaveAny(Values value)
+        {
+
+        }
+
+        public void AskForACard(List<Player> players, int myIndex, Deck stock)
+        {
+
+        }
+
+        public void AskForACard(List<Player> players, int myIndex, Deck stock, Values value)
+        {
+
+        }
     }
 }
