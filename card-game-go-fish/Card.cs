@@ -15,5 +15,22 @@ namespace card_game_go_fish
             Diamonds,
             Hearts,
         }
+
+        public enum Value
+        {
+            Ace,
+            Two,
+            Three,
+            Four,
+            Five,
+            Six,
+            Seven,
+            Eight,
+            Nine,
+            Ten,
+            Jack,
+            Queen,
+            King,
+        }
     }
 }
