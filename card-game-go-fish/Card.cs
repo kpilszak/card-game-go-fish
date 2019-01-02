@@ -6,31 +6,48 @@ using System.Threading.Tasks;
 
 namespace card_game_go_fish
 {
+    enum Suits
+    {
+        Spades,
+        Clubs,
+        Diamonds,
+        Hearts,
+    }
+
+    enum Values
+    {
+        Ace,
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King,
+    }
+
     class Card
     {
-        public enum Suit
+        public Suits Suit { get; set; }
+        public Values Value { get; set; }
+
+        public Card(Suits suit, Values value)
         {
-            Spades,
-            Clubs,
-            Diamonds,
-            Hearts,
+            this.Suit = suit;
+            this.Value = value;
         }
 
-        public enum Value
+        public string Name
         {
-            Ace,
-            Two,
-            Three,
-            Four,
-            Five,
-            Six,
-            Seven,
-            Eight,
-            Nine,
-            Ten,
-            Jack,
-            Queen,
-            King,
+            get
+            {
+                return Value.ToString() + " of " + Suit.ToString();
+            }
         }
     }
 }
