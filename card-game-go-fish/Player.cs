@@ -56,12 +56,35 @@ namespace card_game_go_fish
 
         public void AskForACard(List<Player> players, int myIndex, Deck stock)
         {
-
+            if (stock.Count > 0)
+            {
+                if (cards.Count == 0)
+                    cards.Add(stock.Deal());
+                Values randomValue = GetRandomValue();
+                AskForACard(players, myIndex, stock, randomValue);
+            }
         }
 
         public void AskForACard(List<Player> players, int myIndex, Deck stock, Values value)
         {
-
+            textBoxOnForm.Text += Name + " is asking for " + Card.Plural(value, 1) + Environment.NewLine;
+            int totalCardsGiven = 0;
+            for (int i = 0; i < players.Count; i++)
+            {
+                if (i != myIndex)
+                {
+                    Player player = players[i];
+                    Deck CardsGiven = player.DoYouHaveAny(value);
+                    totalCardsGiven += CardsGiven.Count;
+                    while (CardsGiven.Count > 0)
+                        cards.Add(CardsGiven.Deal());
+                }
+            }
+            if (totalCardsGiven == 0)
+            {
+                textBoxOnForm.Text += Name + " took a card from the stock." + Environment.NewLine;
+                cards.Add(stock.Deal());
+            }
         }
 
         public int CardCount { get { return cards.Count; } }
