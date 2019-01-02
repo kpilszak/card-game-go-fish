@@ -19,6 +19,11 @@ namespace card_game_go_fish
                     cards.Add(new Card((Suits)suit, (Values)value));
         }
 
+        public Deck(IEnumerable<Card> initialCards)
+        {
+            cards = new List<Card>(initialCards);
+        }
+
         public int Count { get { return cards.Count; } }
 
         public void Add(Card cardToAdd)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace card_game_go_fish
@@ -23,7 +24,7 @@ namespace card_game_go_fish
         public IEnumerable<Values> PullOutMatches()
         {
             List<Values> matches = new List<Values>();
-            for (int i = 0; i <= 13; i++)
+            for (int i = 1; i <= 13; i++)
             {
                 Values value = (Values)i;
                 int howMany = 0;
@@ -37,16 +38,20 @@ namespace card_game_go_fish
                         cards.Deal(card);
                 }
             }
+            return matches;
         }
 
         public Values GetRandomValue()
         {
-
+            Card randomCard = cards.Peek(random.Next(cards.Count));
+            return randomCard.Value;
         }
 
         public Deck DoYouHaveAny(Values value)
         {
-
+            Deck cardsIHave = cards.PullOutValues(value);
+            textBoxOnForm.Text += Name + " has " + cardsIHave.Count + Card.Plural(value, cardsIHave.Count) + Environment.NewLine;
+            return cardsIHave;
         }
 
         public void AskForACard(List<Player> players, int myIndex, Deck stock)

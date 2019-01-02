@@ -17,22 +17,25 @@ namespace card_game_go_fish
             this.Value = value;
         }
 
+        private static string[] names = new string[] { "", "Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
+        private static string[] suits = new string[] { "spade", "club", "diamond", "heart" };
+
         public string Name
         {
             get
             {
-                return names[(int)Value] + " " + Suits[(int)Suit];
+                return names[(int)Value] + " " + suits[(int)Suit];
             }
         }
-
-        private static string[] names0And2AndMore = new string[]
-        {
-            "", "aces", "twos", "threes", "fours", "fives", "sixes", "sevens", "eights", "nines", "tens", "jacks", "queens", "kings"
-        };
 
         private static string[] names1 = new string[]
         {
             "", "ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"
+        };
+
+        private static string[] names0And2AndMore = new string[]
+        {
+            "", "aces", "twos", "threes", "fours", "fives", "sixes", "sevens", "eights", "nines", "tens", "jacks", "queens", "kings"
         };
 
         public static string Plural(Values value, int count)
@@ -42,9 +45,5 @@ namespace card_game_go_fish
             else
                 return names0And2AndMore[(int)value];
         }
-
-        private static string[] suits = new string[] { "spade", "club", "diamond", "heart" };
-        private static string[] names = new string[] { "", "Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
-
     }
 }
