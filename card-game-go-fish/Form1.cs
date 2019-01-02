@@ -18,5 +18,21 @@ namespace card_game_go_fish
         }
 
         private Game game;
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textName.Text))
+            {
+                MessageBox.Show("Enter your name", "The game can not be started yet.");
+                return;
+            }
+            game = new Game(textName.Text, new List<string> { "John", "Bart" }, textProgress);
+
+        }
+
+        private void buttonAsk_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
