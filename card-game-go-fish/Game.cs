@@ -69,12 +69,20 @@ namespace card_game_go_fish
 
         public bool PullOutMatches(Player player)
         {
-
+            IEnumerable<Values> matchesPulled = player.PullOutMatches();
+            foreach (Values value in matchesPulled)
+                matches.Add(value, player);
+            if (player.CardCount == 0)
+                return true;
+            return false;
         }
 
         public string DescribeMatches()
         {
-
+            string whoHasWhichMatches = "";
+            foreach (Values value in matches.Keys)
+                whoHasWhichMatches += matches[value].Name + " has a match of " + Card.Plural(value, 0) + Environment.NewLine;
+            return whoHasWhichMatches;
         }
 
         public string GetWinnerName()
