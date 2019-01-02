@@ -32,7 +32,31 @@ namespace card_game_go_fish
 
         private void buttonAsk_Click(object sender, EventArgs e)
         {
+            textProgress.Text = "";
+            if (listHand.SelectedIndex < 0)
+            {
+                MessageBox.Show("Choose a card.");
+                return;
+            }
+            if (game.PlayOneRound(listHand.SelectedIndex))
+            {
+                textProgress.Text += "The winner is " + game.GetWinnerName();
+                textMatches.Text = game.DescribeMatches();
+                buttonAsk.Enabled = false;
+            }
+            else
+                UpdateForm();
+        }
 
+        private void UpdateForm()
+        {
+            listHand.Items.Clear();
+            foreach (String cardName in game.GetPlayerCardNames())
+                listHand.Items.Add(cardName);
+            textMatches.Text = game.DescribeMatches();
+            textProgress.Text += game.DescribePlayerHands();
+            textProgress.SelectionStart = textProgress.Text.Length;
+            textProgress.ScrollToCaret();
         }
     }
 }
