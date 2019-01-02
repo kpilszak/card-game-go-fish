@@ -5,32 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace card_game_go_fish
-{
-    enum Suits
-    {
-        Spades,
-        Clubs,
-        Diamonds,
-        Hearts,
-    }
-
-    enum Values
-    {
-        Ace,
-        Two,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Jack,
-        Queen,
-        King,
-    }
-
+{      
     class Card
     {
         public Suits Suit { get; set; }
