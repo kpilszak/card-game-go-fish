@@ -26,5 +26,50 @@ namespace card_game_go_fish
             Deal();
             players[0].SortHand();
         }
+
+        private void Deal()
+        {
+
+        }
+
+        public bool PlayOneRound(int selectedPlayerCard)
+        {
+
+        }
+
+        public bool PullOutMatches(Player player)
+        {
+
+        }
+
+        public string DescribeMatches()
+        {
+
+        }
+
+        public string GetWinnerName()
+        {
+
+        }
+
+        public IEnumerable<string> GetPlayerCardNames()
+        {
+            return players[0].GetCardNames();
+        }
+
+        public string DescribePlayerHands()
+        {
+            string description = "";
+            for (int i = 0; i < players.Count; i++)
+            {
+                description += players[i].Name + " has " + players[i].CardCount;
+                if (players[i].CardCount == 1)
+                    description += " card.\r\n";
+                else
+                    description += "cards.\r\n";
+            }
+            description += "On the stock there is " + stock.Count + " cards left.\r\n";
+            return description;
+        }
     }
 }
