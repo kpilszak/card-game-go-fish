@@ -30,12 +30,41 @@ namespace card_game_go_fish
 
         private void Deal()
         {
-
+            stock.Shuffle();
+            for (int i = 0; i < 5; i++)
+                foreach (Player player in players)
+                    player.TakeCard(stock.Deal());
+            foreach (Player player in players)
+                PullOutMatches(player);
         }
 
         public bool PlayOneRound(int selectedPlayerCard)
         {
-
+            Values cardToAskFor = players[0].Peek(selectedPlayerCard).Value;
+            for (int i = 0; i < players.Count; i++)
+            {
+                if (i == 0)
+                    players[0].AskForACard(players, 0, stock, cardToAskFor);
+                else
+                    players[i].AskForACard(players, i, stock);
+                if (PullOutMatches(players[i]))
+                {
+                    textBoxOnForm.Text += players[i].Name + " is pulling cards " + Environment.NewLine;
+                    int card = 1;
+                    while (card <= 5 && stock.Count > 0)
+                    {
+                        players[i].TakeCard(stock.Deal());
+                        card++;
+                    }
+                }
+                players[0].SortHand();
+                if (stock.Count == 0)
+                {
+                    textBoxOnForm.Text = "No cards on the stock. The end!" + Environment.NewLine;
+                    return true;
+                }
+            }
+            return false;
         }
 
         public bool PullOutMatches(Player player)
