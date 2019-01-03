@@ -43,9 +43,9 @@ namespace card_game_go_fish
             return Deal(0);
         }
         
-        public Card Peek(int index)
+        public Card Peek(int cardNumber)
         {
-            return cards[index];
+            return cards[cardNumber];
         }
 
         public bool ContainsValue(Values value)

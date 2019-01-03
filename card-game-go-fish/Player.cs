@@ -35,7 +35,8 @@ namespace card_game_go_fish
                 {
                     matches.Add(value);
                     for (int card = cards.Count - 1; card >= 0; card--)
-                        cards.Deal(card);
+                        if (cards.Peek(card).Value == value)
+                            cards.Deal(card);
                 }
             }
             return matches;
@@ -82,7 +83,7 @@ namespace card_game_go_fish
             }
             if (totalCardsGiven == 0)
             {
-                textBoxOnForm.Text += Name + " took a card from the stock." + Environment.NewLine;
+                textBoxOnForm.Text += Name + " has taken card from the stock." + Environment.NewLine;
                 cards.Add(stock.Deal());
             }
         }
