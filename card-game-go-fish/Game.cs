@@ -87,7 +87,36 @@ namespace card_game_go_fish
 
         public string GetWinnerName()
         {
-
+            Dictionary<string, int> winners = new Dictionary<string, int>();
+            foreach (Values value in matches.Keys)
+            {
+                string name = matches[value].Name;
+                if (winners.ContainsKey(name))
+                    winners[name]++;
+                else
+                    winners.Add(name, 1);
+            }
+            int mostMatches = 0;
+            foreach (string name in winners.Keys)
+                if (winners[name] > mostMatches)
+                    mostMatches = winners[name];
+            bool tie = false;
+            string winnerList = "";
+            foreach (string name in winners.Keys)
+                if (winners[name] == mostMatches)
+                {
+                    if (!String.IsNullOrEmpty(winnerList))
+                    {
+                        winnerList += " and ";
+                        tie = true;
+                    }
+                    winnerList += name;
+                }
+            winnerList += ": " + mostMatches + " matches ";
+            if (tie)
+                return "A tie between " + winnerList;
+            else
+                return winnerList;
         }
 
         public IEnumerable<string> GetPlayerCardNames()
