@@ -31,7 +31,6 @@ namespace card_game_go_fish
             textName.Enabled = false;
             buttonAsk.Enabled = true;
             UpdateForm();
-
         }
 
         private void buttonAsk_Click(object sender, EventArgs e)
@@ -44,7 +43,7 @@ namespace card_game_go_fish
             }
             if (game.PlayOneRound(listHand.SelectedIndex))
             {
-                textProgress.Text += "The winner is " + game.GetWinnerName();
+                textProgress.Text += "The winner is..." + Environment.NewLine + game.GetWinnerName();
                 textMatches.Text = game.DescribeMatches();
                 buttonAsk.Enabled = false;
             }
@@ -55,7 +54,7 @@ namespace card_game_go_fish
         private void UpdateForm()
         {
             listHand.Items.Clear();
-            foreach (String cardName in game.GetPlayerCardNames())
+            foreach (string cardName in game.GetPlayerCardNames())
                 listHand.Items.Add(cardName);
             textMatches.Text = game.DescribeMatches();
             textProgress.Text += game.DescribePlayerHands();

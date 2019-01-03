@@ -50,7 +50,7 @@ namespace card_game_go_fish
         public Deck DoYouHaveAny(Values value)
         {
             Deck cardsIHave = cards.PullOutValues(value);
-            textBoxOnForm.Text += Name + " has " + cardsIHave.Count + Card.Plural(value, cardsIHave.Count) + Environment.NewLine;
+            textBoxOnForm.Text += Name + " has " + cardsIHave.Count + " " + Card.Plural(value, cardsIHave.Count) + Environment.NewLine;
             return cardsIHave;
         }
 

@@ -18,10 +18,12 @@ namespace card_game_go_fish
         {
             Random random = new Random();
             this.textBoxOnForm = textBoxOnForm;
-            players = new List<Player>();
-            players.Add(new Player(playerName, random, textBoxOnForm));
+            players = new List<Player>
+            {
+                new Player(playerName, random, textBoxOnForm)
+            };
             foreach (string player in opponentNames)
-                players.Add(new Player(playerName, random, textBoxOnForm));
+                players.Add(new Player(player, random, textBoxOnForm));
             matches = new Dictionary<Values, Player>();
             stock = new Deck();
             Deal();
@@ -114,7 +116,7 @@ namespace card_game_go_fish
                 }
             winnerList += ": " + mostMatches + " matches ";
             if (tie)
-                return "A tie between " + winnerList;
+                return "Tie between " + winnerList;
             else
                 return winnerList;
         }
@@ -133,7 +135,7 @@ namespace card_game_go_fish
                 if (players[i].CardCount == 1)
                     description += " card.\r\n";
                 else
-                    description += "cards.\r\n";
+                    description += " cards.\r\n";
             }
             description += "On the stock there is " + stock.Count + " cards left.\r\n";
             return description;
