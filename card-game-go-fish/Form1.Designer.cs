@@ -81,13 +81,13 @@
             this.textProgress.Multiline = true;
             this.textProgress.Name = "textProgress";
             this.textProgress.ReadOnly = true;
-            this.textProgress.Size = new System.Drawing.Size(341, 413);
+            this.textProgress.Size = new System.Drawing.Size(341, 300);
             this.textProgress.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 558);
+            this.label3.Location = new System.Drawing.Point(13, 429);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 5;
@@ -95,11 +95,11 @@
             // 
             // textMatches
             // 
-            this.textMatches.Location = new System.Drawing.Point(17, 582);
+            this.textMatches.Location = new System.Drawing.Point(17, 452);
             this.textMatches.Multiline = true;
             this.textMatches.Name = "textMatches";
             this.textMatches.ReadOnly = true;
-            this.textMatches.Size = new System.Drawing.Size(341, 104);
+            this.textMatches.Size = new System.Drawing.Size(341, 234);
             this.textMatches.TabIndex = 6;
             // 
             // listHand
