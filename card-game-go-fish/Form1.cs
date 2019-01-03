@@ -27,6 +27,10 @@ namespace card_game_go_fish
                 return;
             }
             game = new Game(textName.Text, new List<string> { "John", "Bart" }, textProgress);
+            buttonStart.Enabled = false;
+            textName.Enabled = false;
+            buttonAsk.Enabled = true;
+            UpdateForm();
 
         }
 

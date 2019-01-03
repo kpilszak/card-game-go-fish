@@ -3,3 +3,8 @@ C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj
 C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card_game_go_fish.Properties.Resources.resources
 C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card-game-go-fish.csproj.GenerateResource.cache
 C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card-game-go-fish.csproj.CoreCompileInputs.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\bin\Debug\card-game-go-fish.exe.config
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\bin\Debug\card-game-go-fish.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\bin\Debug\card-game-go-fish.pdb
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card-game-go-fish.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card-game-go-fish.pdb
