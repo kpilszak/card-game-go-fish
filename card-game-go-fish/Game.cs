@@ -49,7 +49,7 @@ namespace card_game_go_fish
                     players[0].AskForACard(players, 0, stock, cardToAskFor);
                 else
                     players[i].AskForACard(players, i, stock);
-                if (PullOutMatches(players[i]) == true)
+                if (PullOutMatches(players[i]))
                 {
                     textBoxOnForm.Text += players[i].Name + " is pulling cards " + Environment.NewLine;
                     int card = 1;
