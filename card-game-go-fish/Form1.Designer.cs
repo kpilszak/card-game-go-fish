@@ -81,13 +81,13 @@
             this.textProgress.Multiline = true;
             this.textProgress.Name = "textProgress";
             this.textProgress.ReadOnly = true;
-            this.textProgress.Size = new System.Drawing.Size(341, 300);
+            this.textProgress.Size = new System.Drawing.Size(341, 424);
             this.textProgress.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 429);
+            this.label3.Location = new System.Drawing.Point(13, 554);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // textMatches
             // 
-            this.textMatches.Location = new System.Drawing.Point(17, 452);
+            this.textMatches.Location = new System.Drawing.Point(17, 577);
             this.textMatches.Multiline = true;
             this.textMatches.Name = "textMatches";
             this.textMatches.ReadOnly = true;
@@ -108,7 +108,7 @@
             this.listHand.ItemHeight = 20;
             this.listHand.Location = new System.Drawing.Point(379, 37);
             this.listHand.Name = "listHand";
-            this.listHand.Size = new System.Drawing.Size(239, 584);
+            this.listHand.Size = new System.Drawing.Size(239, 664);
             this.listHand.TabIndex = 7;
             // 
             // label4
@@ -123,11 +123,11 @@
             // buttonAsk
             // 
             this.buttonAsk.Enabled = false;
-            this.buttonAsk.Location = new System.Drawing.Point(379, 641);
+            this.buttonAsk.Location = new System.Drawing.Point(379, 725);
             this.buttonAsk.Name = "buttonAsk";
-            this.buttonAsk.Size = new System.Drawing.Size(239, 44);
+            this.buttonAsk.Size = new System.Drawing.Size(239, 86);
             this.buttonAsk.TabIndex = 9;
-            this.buttonAsk.Text = "Ask for card";
+            this.buttonAsk.Text = "Ask for a card";
             this.buttonAsk.UseVisualStyleBackColor = true;
             this.buttonAsk.Click += new System.EventHandler(this.buttonAsk_Click);
             // 
@@ -135,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 698);
+            this.ClientSize = new System.Drawing.Size(632, 823);
             this.Controls.Add(this.buttonAsk);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listHand);
