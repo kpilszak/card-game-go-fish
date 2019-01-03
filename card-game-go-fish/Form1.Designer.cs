@@ -69,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 91);
+            this.label2.Location = new System.Drawing.Point(13, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 20);
             this.label2.TabIndex = 3;
@@ -77,17 +77,17 @@
             // 
             // textProgress
             // 
-            this.textProgress.Location = new System.Drawing.Point(17, 114);
+            this.textProgress.Location = new System.Drawing.Point(17, 100);
             this.textProgress.Multiline = true;
             this.textProgress.Name = "textProgress";
             this.textProgress.ReadOnly = true;
-            this.textProgress.Size = new System.Drawing.Size(341, 424);
+            this.textProgress.Size = new System.Drawing.Size(341, 345);
             this.textProgress.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 554);
+            this.label3.Location = new System.Drawing.Point(13, 448);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 5;
@@ -95,11 +95,11 @@
             // 
             // textMatches
             // 
-            this.textMatches.Location = new System.Drawing.Point(17, 577);
+            this.textMatches.Location = new System.Drawing.Point(17, 471);
             this.textMatches.Multiline = true;
             this.textMatches.Name = "textMatches";
             this.textMatches.ReadOnly = true;
-            this.textMatches.Size = new System.Drawing.Size(341, 234);
+            this.textMatches.Size = new System.Drawing.Size(341, 215);
             this.textMatches.TabIndex = 6;
             // 
             // listHand
@@ -108,7 +108,7 @@
             this.listHand.ItemHeight = 20;
             this.listHand.Location = new System.Drawing.Point(379, 37);
             this.listHand.Name = "listHand";
-            this.listHand.Size = new System.Drawing.Size(239, 664);
+            this.listHand.Size = new System.Drawing.Size(239, 584);
             this.listHand.TabIndex = 7;
             // 
             // label4
@@ -123,11 +123,11 @@
             // buttonAsk
             // 
             this.buttonAsk.Enabled = false;
-            this.buttonAsk.Location = new System.Drawing.Point(379, 725);
+            this.buttonAsk.Location = new System.Drawing.Point(379, 641);
             this.buttonAsk.Name = "buttonAsk";
-            this.buttonAsk.Size = new System.Drawing.Size(239, 86);
+            this.buttonAsk.Size = new System.Drawing.Size(239, 44);
             this.buttonAsk.TabIndex = 9;
-            this.buttonAsk.Text = "Ask for a card";
+            this.buttonAsk.Text = "Ask for card";
             this.buttonAsk.UseVisualStyleBackColor = true;
             this.buttonAsk.Click += new System.EventHandler(this.buttonAsk_Click);
             // 
@@ -135,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 823);
+            this.ClientSize = new System.Drawing.Size(632, 698);
             this.Controls.Add(this.buttonAsk);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listHand);
