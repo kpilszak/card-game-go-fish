@@ -90,7 +90,7 @@ namespace card_game_go_fish
         public int CardCount { get { return cards.Count; } }
         public void TakeCard(Card card) { cards.Add(card); }
         public IEnumerable<string> GetCardNames() { return cards.GetCardNames(); }
-        public Card Peek(int cardNumber) { return cards.Peek(cardNumber); };
+        public Card Peek(int cardNumber) { return cards.Peek(cardNumber); }
         public void SortHand() { cards.SortByValue(); }
     }
 }

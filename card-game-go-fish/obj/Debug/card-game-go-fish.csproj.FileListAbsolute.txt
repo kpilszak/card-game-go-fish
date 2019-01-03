@@ -1,0 +1,5 @@
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card-game-go-fish.csprojAssemblyReference.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card_game_go_fish.Form1.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card_game_go_fish.Properties.Resources.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card-game-go-fish.csproj.GenerateResource.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\card-game-go-fish\card-game-go-fish\obj\Debug\card-game-go-fish.csproj.CoreCompileInputs.cache

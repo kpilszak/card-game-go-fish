@@ -60,7 +60,7 @@ namespace card_game_go_fish
         {
             Deck deckToReturn = new Deck(new Card[] { });
             for (int i = cards.Count - 1; i >= 0; i--)
-                if (cards.[i].Value == value)
+                if (cards[i].Value == value)
                     deckToReturn.Add(Deal(i));
             return deckToReturn;
         }
