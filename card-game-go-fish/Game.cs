@@ -137,7 +137,7 @@ namespace card_game_go_fish
                 else
                     description += " cards.\r\n";
             }
-            description += "On the stock there is " + stock.Count + " cards left.\r\n";
+            description += "On the stock there is " + stock.Count + " cards left.";
             return description;
         }
     }
