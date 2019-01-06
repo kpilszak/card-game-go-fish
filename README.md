@@ -25,7 +25,7 @@ IDE: Visual Studio 2017
 * Windows 10
 
 ## Setup
-To run this project, open in Windows this file: /card-game-go-fish/obj/Debug/card-game-go-fish.exe
+To run this project, open in Windows this file: <a href="https://github.com/kpilszak/card-game-go-fish/blob/master/card-game-go-fish/obj/Debug/card-game-go-fish.exe">/card-game-go-fish/obj/Debug/card-game-go-fish.exe</a>
 
 ## Sources
 This project was created as an exercise from Jennifer Greene and Andrew Stellman book "Head First. C#".
